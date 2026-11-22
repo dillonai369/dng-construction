@@ -1,0 +1,7 @@
+{
+  "name": "dnexus-remodeling-preview",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node scripts/fetch-images.mjs" },
+  "dependencies": { "sharp": "^0.33.5" }
+}
