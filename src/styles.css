@@ -375,7 +375,7 @@ nav a[aria-current="page"]::after{transform:scaleX(1)}
   .hero .actions .btn,.page-hero .actions .btn,.panel .btn,.band .btn,form .btn,.article-cta .btn,.intro .btn,.head .btn{width:100%}
   .actions{gap:10px}
 
-  .hero{min-height:0}
+  .hero{min-height:min(80vh,640px)}
   .hero .wrap{padding-top:132px;padding-bottom:28px}
   .hero p.lead{font-size:1.02rem;margin:16px 0 24px}
   .hero-foot{margin:36px -20px 0}
