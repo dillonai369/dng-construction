@@ -3,299 +3,316 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DNG Construction</title>
-<meta name="description" content="Kitchens, baths, basements and commercial build-outs from the family behind DNexus Group. Free estimates.">
+<title>DNG Construction | Home &amp; Commercial Remodeling</title>
+<meta name="description" content="DNG Construction remodels homes and commercial spaces with one crew from first walkthrough to final finish. Free estimates.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#2753BA">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%232753BA%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-family=%27Arial%27 font-weight=%27700%27 font-size=%2734%27 fill=%27white%27 text-anchor=%27middle%27%3ED%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#050A1E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 fill=%27%23050A1E%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-family=%27Arial%27 font-weight=%27700%27 font-size=%2734%27 fill=%27white%27 text-anchor=%27middle%27%3ED%3C/text%3E%3C/svg%3E">
 <meta property="og:title" content="DNG Construction">
-<meta property="og:description" content="Kitchens, baths, basements and commercial build-outs. Free estimates.">
+<meta property="og:description" content="Home and commercial remodeling. One crew, start to finish.">
 <meta property="og:image" content="img/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..700&display=swap">
 <style>
-/* Layout idea: the DNexus Group page rhythm (centered hero with a gradient-framed photo,
-   white and light-gray bands, pill buttons, gradient call-to-action) retold for remodeling. */
+/* Layout idea: full-bleed darkened photography carries the page; deep navy and white bands
+   alternate; wide uppercase headings, hairline rules and square controls. */
 :root{
-  color-scheme: light;
-  --blue:#2753BA;
-  --blue-dark:#1c3f92;
-  --green:#2E8B1F;
-  --ink:#282828;
-  --body:#5c5f66;
-  --line:#e2e5ec;
-  --mist:#f5f6f8;
+  color-scheme: dark;
+  --ink:#050A1E;
+  --navy:#0A1436;
+  --blue:#2F6BFF;
+  --sky:#8FB4FF;
+  --paper:#F3F4F7;
   --white:#ffffff;
-  --display:"Poppins", "Segoe UI", Arial, sans-serif;
-  --text:"Inter", "Segoe UI", Arial, sans-serif;
-  --wrap:1180px;
+  --mute:#A9B2C9;
+  --text-dark:#3A4257;
+  --rule:rgba(255,255,255,.16);
+  --rule-dark:#D5D9E2;
+  --font:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --wrap:1240px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--white);color:var(--body);font-family:var(--text);font-size:17px;line-height:1.6}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none !important}}
+body{margin:0;background:var(--ink);color:var(--white);font-family:var(--font);font-size:17px;line-height:1.6}
 img{max-width:100%;height:auto;display:block}
-h1,h2,h3{font-family:var(--display);color:var(--ink);font-weight:600;margin:0;text-wrap:balance}
-h1{font-size:clamp(2.1rem,5vw,3.25rem);line-height:1.12;letter-spacing:-.02em}
-h2{font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.15;letter-spacing:-.015em}
-h3{font-size:1.2rem;line-height:1.3}
+h1,h2,h3{margin:0;font-weight:650;font-stretch:118%;line-height:1.05;text-wrap:balance}
+h1{font-size:clamp(2.5rem,6.4vw,5.25rem);letter-spacing:-.02em;text-transform:uppercase}
+h2{font-size:clamp(1.9rem,4.2vw,3.25rem);letter-spacing:-.015em;text-transform:uppercase}
+h3{font-size:1.2rem;font-stretch:110%;line-height:1.25}
 p{margin:0}
-a{color:var(--blue)}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:2px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
-.btn{display:inline-block;background:var(--blue);color:#fff;border:1px solid var(--blue);border-radius:50px;padding:12px 26px;font:500 1rem var(--text);text-decoration:none;cursor:pointer}
-.btn:hover{background:var(--blue-dark);border-color:var(--blue-dark)}
-.btn.ghost{background:transparent;color:var(--blue)}
-.btn.ghost:hover{background:var(--blue);color:#fff}
-.btn.white{background:#fff;color:var(--ink);border-color:#fff}
-.btn.white:hover{background:#eef1f7}
-.eyebrow{font:600 .78rem var(--text);letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.label{font-size:.76rem;font-weight:600;font-stretch:112%;letter-spacing:.22em;text-transform:uppercase;color:var(--sky)}
+.paper .label{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border:1px solid var(--white);background:transparent;color:var(--white);font:600 .8rem var(--font);font-stretch:112%;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:var(--white);color:var(--ink)}
+.btn.solid{background:var(--blue);border-color:var(--blue)}
+.btn.solid:hover{background:var(--white);border-color:var(--white);color:var(--ink)}
+.btn.dark{border-color:var(--ink);color:var(--ink)}
+.btn.dark:hover{background:var(--ink);color:var(--white)}
+.arrow{width:18px;height:10px;flex:none}
 
-.note{background:var(--ink);color:#e9eaee;font-size:.82rem;text-align:center;padding:7px 16px}
+/* Header */
+header{position:fixed;inset:0 0 auto 0;z-index:10;transition:background .25s,border-color .25s;border-bottom:1px solid transparent}
+header.solid{background:rgba(5,10,30,.96);border-bottom-color:var(--rule)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:78px}
+.wm{display:inline-flex;align-items:baseline;gap:10px;text-decoration:none;font-weight:700;font-stretch:122%;font-size:1.6rem;letter-spacing:.02em}
+.wm small{font-size:.66rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--sky)}
+nav{display:flex;gap:30px}
+nav a{font-size:.76rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:6px 0;border-bottom:1px solid transparent}
+nav a:hover{border-bottom-color:var(--white)}
+.bar .btn{padding:11px 20px}
+@media (max-width:1020px){nav{display:none}}
+@media (max-width:480px){.wm small{display:none}.bar .btn{padding:10px 14px;letter-spacing:.1em}}
 
-header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:12px;padding-bottom:12px}
-.bar img{height:54px;width:auto}
-nav{display:flex;gap:26px}
-nav a{color:var(--body);text-decoration:none;font-size:.98rem}
-nav a:hover{color:var(--blue)}
-.bar-cta{display:flex;align-items:center;gap:18px}
-.phone{color:var(--ink);font-weight:500;text-decoration:none;white-space:nowrap}
-@media (max-width:980px){nav{display:none}}
-@media (max-width:560px){.phone{display:none}.bar img{height:44px}.btn{padding:11px 20px}}
+/* Hero */
+.hero{position:relative;min-height:min(92vh,880px);display:flex;align-items:flex-end;background:var(--ink)}
+.hero img.bg,.band img.bg,.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,30,.72) 0%,rgba(5,10,30,.25) 38%,rgba(5,10,30,.9) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-top:150px;padding-bottom:64px}
+.hero p.lead{max-width:560px;margin:22px 0 30px;font-size:1.15rem;color:#E3E8F5}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:#D5DCEE;flex-wrap:wrap}
 
-.hero{background:linear-gradient(180deg,#f7f8fa 0%,#fff 100%);text-align:center;padding:64px 0 72px}
-.hero p.lead{max-width:640px;margin:18px auto 26px;font-size:1.15rem}
-.hero .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.frame{margin:44px auto 0;max-width:980px;padding:8px 8px 0;border-radius:34px 34px 0 0;background:linear-gradient(90deg,var(--blue),var(--green))}
-.frame img{border-radius:26px 26px 0 0;width:100%;aspect-ratio:16/9;object-fit:cover}
+/* Intro */
+.paper{background:var(--paper);color:var(--ink)}
+section{padding:104px 0}
+@media (max-width:860px){section{padding:68px 0}}
+.intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:72px;align-items:end}
+@media (max-width:860px){.intro{grid-template-columns:minmax(0,1fr);gap:28px}}
+.intro p{color:var(--text-dark);font-size:1.08rem}
+.intro .btn{margin-top:28px}
 
-section{padding:84px 0}
-.mist{background:var(--mist)}
-.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
-.split img{border-radius:24px;aspect-ratio:4/3;object-fit:cover;width:100%}
-@media (max-width:860px){.split{grid-template-columns:minmax(0,1fr);gap:32px}section{padding:60px 0}}
-.points{list-style:none;margin:22px 0 28px;padding:0;display:grid;gap:14px}
-.points li{display:flex;gap:14px;align-items:flex-start}
-.dot{flex:none;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--green));display:grid;place-items:center}
-.dot svg{width:17px;height:17px}
+/* Markets */
+.markets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:860px){.markets{grid-template-columns:minmax(0,1fr)}}
+.panel{position:relative;min-height:640px;display:flex;align-items:flex-end;overflow:hidden;background:var(--navy)}
+.panel img{transition:transform .8s ease}
+.panel:hover img{transform:scale(1.04)}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,30,.3) 0%,rgba(5,10,30,.92) 78%)}
+.panel-in{position:relative;z-index:1;padding:48px;width:100%}
+@media (max-width:520px){.panel{min-height:560px}.panel-in{padding:32px 28px}}
+.panel h2{font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:.06em;margin:12px 0 14px}
+.panel p{color:#DDE3F1;max-width:440px}
+.panel ul{list-style:none;margin:22px 0 28px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;border-top:1px solid var(--rule)}
+.panel li{padding:11px 0;border-bottom:1px solid var(--rule);font-size:.92rem}
+@media (max-width:420px){.panel ul{grid-template-columns:minmax(0,1fr)}}
 
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
-.head p{max-width:560px;margin-top:12px}
-.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-@media (max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}}
-.panel{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px}
-.panel h3{font-size:1.4rem;margin-bottom:6px}
-.panel ul{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:16px}
-.panel li strong{display:block;color:var(--ink);font-weight:600}
-.panel li span{font-size:.96rem}
-.tag{display:inline-block;font:600 .74rem var(--text);letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+/* Stats */
+.stats{background:var(--navy);padding:0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.stat{padding:54px 28px 50px 0;border-left:1px solid var(--rule);padding-left:28px}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-size:clamp(2.6rem,5vw,4.25rem);font-weight:650;font-stretch:120%;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:12px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+@media (max-width:860px){.stats .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.stat{padding:34px 20px 32px}.stat:nth-child(odd){border-left:0;padding-left:0}.stat:nth-child(n+3){border-top:1px solid var(--rule)}}
 
-.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:step}
-@media (max-width:980px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:520px){.steps{grid-template-columns:minmax(0,1fr)}}
-.step{border-top:3px solid var(--blue);padding-top:18px}
-.step::before{counter-increment:step;content:"0" counter(step);font:600 .9rem var(--display);color:var(--blue)}
-.step h3{margin:6px 0 8px}
-.step p{font-size:.97rem}
+/* Projects */
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.head h2{margin-top:14px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+@media (max-width:1020px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
+.card{margin:0}
+.card .shot{overflow:hidden;background:#dfe2ea}
+.card img{aspect-ratio:4/5;object-fit:cover;width:100%;transition:transform .6s ease}
+.card:hover img{transform:scale(1.05)}
+.card figcaption{padding-top:16px;border-top:2px solid var(--ink);margin-top:16px}
+.card small{display:block;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}
+.card strong{display:block;margin-top:6px;font-size:1.12rem;font-weight:600;font-stretch:110%}
+.fine{margin-top:26px;font-size:.85rem;color:#5B6377}
 
-.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-@media (max-width:980px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:480px){.gallery{grid-template-columns:minmax(0,1fr)}}
-.gallery figure{margin:0}
-.gallery img{border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%}
-.gallery figcaption{margin-top:10px;font-weight:500;color:var(--ink);font-size:.97rem}
-.sample{font-size:.85rem;margin-top:18px}
+/* Approach */
+.approach{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px}
+@media (max-width:860px){.approach{grid-template-columns:minmax(0,1fr);gap:36px}}
+.approach > div > p{color:var(--mute);margin-top:20px;max-width:420px}
+.rows{border-top:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:64px minmax(0,1fr);gap:20px;padding:26px 0;border-bottom:1px solid var(--rule)}
+.row i{font-style:normal;font-size:.8rem;font-weight:600;letter-spacing:.14em;color:var(--sky);padding-top:5px;font-variant-numeric:tabular-nums}
+.row p{color:var(--mute);margin-top:6px;font-size:.98rem}
 
-.edge{background:var(--blue);color:#e5ebf9}
-.edge h2{color:#fff}
-.edge .eyebrow{color:#cfe9c9}
-.edge .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center}
-@media (max-width:860px){.edge .grid{grid-template-columns:minmax(0,1fr);gap:28px}}
-.edge ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.edge li{background:rgba(255,255,255,.1);border-radius:14px;padding:14px 18px;color:#fff;font-weight:500}
+/* Photo band */
+.band{position:relative;padding:150px 0;background:var(--ink)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,10,30,.94) 0%,rgba(5,10,30,.7) 48%,rgba(5,10,30,.3) 100%)}
+.band .wrap{position:relative;z-index:1}
+.band h2{max-width:760px;margin:16px 0 20px}
+.band p{max-width:520px;color:#DDE3F1;margin-bottom:30px}
+@media (max-width:860px){.band{padding:96px 0}}
 
-.quote{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
-@media (max-width:860px){.quote{grid-template-columns:minmax(0,1fr);gap:28px}}
-form{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-@media (max-width:520px){form{grid-template-columns:minmax(0,1fr)}}
-.field{display:grid;gap:6px}
+/* Estimate */
+.quote{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:72px;align-items:start}
+@media (max-width:860px){.quote{grid-template-columns:minmax(0,1fr);gap:32px}}
+.quote h2{margin:14px 0 18px}
+.quote > div > p{color:var(--text-dark)}
+.lines{margin-top:30px;border-top:1px solid var(--rule-dark)}
+.lines div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--rule-dark);font-weight:600;flex-wrap:wrap}
+.lines span{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#5B6377;align-self:center}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;background:var(--white);padding:36px;border-top:4px solid var(--blue)}
+@media (max-width:520px){form{grid-template-columns:minmax(0,1fr);padding:26px 22px}}
+.field{display:grid;gap:7px}
 .field.full{grid-column:1/-1}
-label{font-size:.9rem;font-weight:500;color:var(--ink)}
-input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid #c9ced8;border-radius:12px;padding:11px 14px;width:100%}
-textarea{min-height:110px;resize:vertical}
-form .btn{grid-column:1/-1;justify-self:start}
-#sent{grid-column:1/-1;margin:0;padding:12px 16px;border-radius:12px;background:#e9f5e6;color:#1f5f15;font-size:.95rem}
+label{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#3A4257}
+input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--paper);border:1px solid #C7CCD8;border-radius:0;padding:13px 14px;width:100%;color-scheme:light}
+textarea{min-height:120px;resize:vertical}
+form .btn{grid-column:1/-1;justify-self:start;background:var(--ink);border-color:var(--ink)}
+form .btn:hover{background:var(--blue);border-color:var(--blue);color:var(--white)}
+#sent{grid-column:1/-1;margin:0;padding:14px 16px;background:#E4ECFF;color:#16306E;font-size:.95rem}
 #sent[hidden]{display:none}
-.contact-lines{display:grid;gap:10px;margin-top:22px;color:var(--ink);font-weight:500}
 
-.cta{background:linear-gradient(100deg,var(--blue) 0%,#1f6b7a 55%,var(--green) 100%);color:#fff;text-align:center;padding:76px 0}
-.cta h2{color:#fff}
-.cta p{max-width:560px;margin:14px auto 26px;color:#eef3ff}
-
-footer{padding:34px 0 28px}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
-.foot img{height:52px;width:auto}
-.foot nav{display:flex;flex-wrap:wrap;gap:22px}
-.legal{border-top:1px solid var(--line);margin-top:24px;padding-top:18px;font-size:.85rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.ph{display:grid;place-items:center;text-align:center;padding:20px;background:linear-gradient(135deg,#dfe6f6,#e3f1e0);color:#3d4a66;font-size:.9rem;font-weight:500;border-radius:18px;aspect-ratio:4/3;width:100%}
-.frame .ph{aspect-ratio:16/9;border-radius:26px 26px 0 0}
-.split .ph{border-radius:24px}
-.wm{font:700 1.7rem var(--display);color:var(--ink);letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:8px;text-decoration:none}
-.wm small{font:600 .72rem var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
-header a:has(.wm){text-decoration:none}
+/* Footer */
+footer{background:var(--ink);padding:72px 0 30px;border-top:1px solid var(--rule)}
+.foot{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:48px}
+@media (max-width:860px){.foot{grid-template-columns:minmax(0,1fr);gap:32px}}
+.foot p{color:var(--mute);margin-top:16px;max-width:340px;font-size:.95rem}
+.foot h3{font-size:.74rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);margin-bottom:16px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.foot li a{text-decoration:none;color:#DDE3F1}
+.foot li a:hover{color:var(--white);text-decoration:underline}
+.legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:56px;padding-top:22px;border-top:1px solid var(--rule);font-size:.8rem;color:var(--mute)}
 </style>
 </head>
 <body>
 
-<header>
+<header id="hdr">
   <div class="wrap bar">
-    <a href="#top"><span class="wm">DNG<small>Construction</small></span></a>
+    <a class="wm" href="#top">DNG<small>Construction</small></a>
     <nav aria-label="Main">
-      <a href="#services">Services</a>
-      <a href="#why">Why DNG</a>
-      <a href="#process">Our Process</a>
+      <a href="#markets">Markets</a>
       <a href="#projects">Projects</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
       <a href="#estimate">Contact</a>
     </nav>
-    <div class="bar-cta">
-      <a class="phone" href="tel:+17863587238">(786) 358-7238</a>
-      <a class="btn" href="#estimate">Get a Free Estimate</a>
-    </div>
+    <a class="btn" href="#estimate">Free Estimate</a>
   </div>
 </header>
 
 <main id="top">
 
 <div class="hero">
+  <img class="bg" src="img/hero.jpg" width="2000" height="1125" alt="Modern home at dusk with interior lights on" fetchpriority="high">
   <div class="wrap">
-    <h1>Remodeling Built Right,<br>Behind the Walls and in Front of Them</h1>
-    <p class="lead">Kitchens, baths, basements and commercial build-outs from the family behind DNexus Group, with 33+ years in electrical and low-voltage construction.</p>
+    <p class="label">Home &amp; Commercial Remodeling</p>
+    <h1>Built Right.<br>Finished Right.</h1>
+    <p class="lead">DNG Construction remodels homes and commercial spaces with one accountable crew, from the first walkthrough to the final finish.</p>
     <div class="actions">
-      <a class="btn" href="#estimate">Get a Free Estimate</a>
-      <a class="btn ghost" href="#services">See Our Services</a>
+      <a class="btn solid" href="#estimate">Get a Free Estimate <svg class="arrow" aria-hidden="true" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h16M12 1l4 4-4 4"/></svg></a>
+      <a class="btn" href="#projects">View Our Work</a>
     </div>
-    <div class="frame"><img src="img/hero.jpg" width="1600" height="900" fetchpriority="high" alt="Remodeled open kitchen and living area with a large island"></div>
+    <div class="hero-foot">
+      <span>Kitchens · Baths · Basements · Additions</span>
+      <span>Tenant Build-Outs · Offices · Retail</span>
+    </div>
   </div>
 </div>
 
-<section id="why">
-  <div class="wrap split">
-    <img src="img/crew.jpg" width="1000" height="750" loading="lazy" alt="Contractor reviewing plans in a room under renovation">
+<section class="paper" id="about">
+  <div class="wrap intro">
     <div>
-      <p class="eyebrow">Why DNG</p>
-      <h2>One Crew You Can Trust With the Whole Job</h2>
-      <ul class="points">
-        <li><span class="dot"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Backed by 33+ years of DNexus Group electrical and low-voltage experience.</span></li>
-        <li><span class="dot"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Homes and commercial spaces handled by the same team.</span></li>
-        <li><span class="dot"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Clear written estimates before any work starts.</span></li>
-        <li><span class="dot"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>On-time, quality delivery and a clean job site.</span></li>
-        <li><span class="dot"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Customer satisfaction comes first on every project.</span></li>
+      <p class="label">Who we are</p>
+      <h2 style="margin-top:14px">One Crew. Every Trade. Start to Finish.</h2>
+    </div>
+    <div>
+      <p>DNG Construction comes from the family behind DNexus Group, a builder with 33+ years in electrical and low-voltage construction. We bring that same discipline to remodeling: a clear scope, a real schedule and work that holds up behind the walls as well as in front of them.</p>
+      <a class="btn dark" href="#approach">How We Work <svg class="arrow" aria-hidden="true" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h16M12 1l4 4-4 4"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<div class="markets" id="markets">
+  <div class="panel">
+    <img src="img/home.jpg" width="1400" height="1050" loading="lazy" alt="Remodeled kitchen with dark cabinetry and a marble island">
+    <div class="panel-in">
+      <p class="label">Market 01</p>
+      <h2>Home Remodeling</h2>
+      <p>Make the house you have work the way you want it to.</p>
+      <ul>
+        <li>Kitchens</li><li>Bathrooms</li><li>Basements</li><li>Additions</li><li>Whole-home renovations</li><li>Flooring, paint and trim</li>
       </ul>
-      <a class="btn" href="#estimate">Start Your Project</a>
+      <a class="btn" href="#estimate">Start a Home Project</a>
     </div>
   </div>
-</section>
+  <div class="panel">
+    <img src="img/commercial.jpg" width="1400" height="1050" loading="lazy" alt="Finished commercial lobby with a stone reception desk">
+    <div class="panel-in">
+      <p class="label">Market 02</p>
+      <h2>Commercial Remodeling</h2>
+      <p>Spaces built around how your business runs, with minimal downtime.</p>
+      <ul>
+        <li>Tenant build-outs</li><li>Office renovations</li><li>Retail spaces</li><li>Restaurants</li><li>Electrical and lighting</li><li>Data and security wiring</li>
+      </ul>
+      <a class="btn" href="#estimate">Start a Commercial Project</a>
+    </div>
+  </div>
+</div>
 
-<section id="services" class="mist">
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>33+</b><span>Years of DNexus Group experience behind us</span></div>
+    <div class="stat"><b>2</b><span>Markets: home and commercial</span></div>
+    <div class="stat"><b>1</b><span>Crew from start to finish</span></div>
+    <div class="stat"><b>$0</b><span>Cost for your estimate</span></div>
+  </div>
+</div>
+
+<section class="paper" id="projects">
   <div class="wrap">
     <div class="head">
       <div>
-        <p class="eyebrow">Services</p>
-        <h2>Home and Commercial Remodeling</h2>
-        <p>From a single bathroom to a full tenant build-out, we plan it, build it and finish it.</p>
-      </div>
-      <a class="btn" href="#estimate">Request an Estimate</a>
-    </div>
-    <div class="cols">
-      <div class="panel">
-        <span class="tag">For homeowners</span>
-        <h3>Home Remodeling</h3>
-        <p>Make the house you have work the way you want it to.</p>
-        <ul>
-          <li><strong>Kitchens</strong><span>Cabinets, countertops, islands, lighting and layout changes.</span></li>
-          <li><strong>Bathrooms</strong><span>Walk-in showers, vanities, tile and full gut renovations.</span></li>
-          <li><strong>Basements</strong><span>Finished living space, media rooms and wet bars.</span></li>
-          <li><strong>Additions and whole-home</strong><span>More room, new floor plans and top-to-bottom updates.</span></li>
-          <li><strong>Flooring, paint and trim</strong><span>The finish work that makes a remodel feel complete.</span></li>
-        </ul>
-      </div>
-      <div class="panel">
-        <span class="tag">For businesses</span>
-        <h3>Commercial Remodeling</h3>
-        <p>Spaces built around how your business runs, with minimal downtime.</p>
-        <ul>
-          <li><strong>Tenant build-outs</strong><span>Empty shell to move-in ready.</span></li>
-          <li><strong>Office renovations</strong><span>Conference rooms, open floors, break areas and reception.</span></li>
-          <li><strong>Retail and restaurant spaces</strong><span>Storefronts and interiors that are ready for customers.</span></li>
-          <li><strong>Electrical and lighting upgrades</strong><span>Panels, circuits and modern LED lighting.</span></li>
-          <li><strong>Data, security and low-voltage</strong><span>Network cabling, cameras and access control built in.</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="wrap">
-    <div class="head">
-      <div>
-        <p class="eyebrow">Our process</p>
-        <h2>Four Steps From First Call to Final Walkthrough</h2>
-      </div>
-    </div>
-    <div class="steps">
-      <div class="step"><h3>Free estimate</h3><p>We visit the space, listen to what you want and measure everything.</p></div>
-      <div class="step"><h3>Plan and price</h3><p>You get a written scope, schedule and price to approve.</p></div>
-      <div class="step"><h3>Build</h3><p>Our crew does the work and keeps you updated along the way.</p></div>
-      <div class="step"><h3>Walkthrough</h3><p>We go through the finished job together and fix anything you flag.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="mist">
-  <div class="wrap">
-    <div class="head">
-      <div>
-        <p class="eyebrow">Projects</p>
+        <p class="label">Featured work</p>
         <h2>The Kind of Work We Do</h2>
       </div>
+      <a class="btn dark" href="#estimate">Discuss Your Project</a>
     </div>
-    <div class="gallery">
-      <figure><img src="img/kitchen.jpg" width="1000" height="750" loading="lazy" alt="Kitchen with navy and white cabinets and quartz countertops"><figcaption>Kitchen remodel</figcaption></figure>
-      <figure><img src="img/bath.jpg" width="1000" height="750" loading="lazy" alt="Bathroom with a glass walk-in shower and floating vanity"><figcaption>Bathroom renovation</figcaption></figure>
-      <figure><img src="img/basement.jpg" width="1000" height="750" loading="lazy" alt="Finished basement with media wall and wet bar"><figcaption>Finished basement</figcaption></figure>
-      <figure><img src="img/office.jpg" width="1000" height="750" loading="lazy" alt="Open office with a glass conference room"><figcaption>Office build-out</figcaption></figure>
+    <div class="grid">
+      <figure class="card"><div class="shot"><img src="img/kitchen.jpg" width="1000" height="750" loading="lazy" alt="Kitchen with navy and white cabinets"></div><figcaption><small>Residential</small><strong>Kitchen Remodel</strong></figcaption></figure>
+      <figure class="card"><div class="shot"><img src="img/bath.jpg" width="1000" height="750" loading="lazy" alt="Bathroom with a glass walk-in shower"></div><figcaption><small>Residential</small><strong>Primary Bath Renovation</strong></figcaption></figure>
+      <figure class="card"><div class="shot"><img src="img/basement.jpg" width="1000" height="750" loading="lazy" alt="Finished basement with a media wall"></div><figcaption><small>Residential</small><strong>Finished Basement</strong></figcaption></figure>
+      <figure class="card"><div class="shot"><img src="img/office.jpg" width="1000" height="750" loading="lazy" alt="Open office with a glass conference room"></div><figcaption><small>Commercial</small><strong>Office Build-Out</strong></figcaption></figure>
     </div>
-    <p class="sample">Sample images for this preview. Your own project photos go here.</p>
+    <p class="fine">Sample images for this preview. Your own project photos go here.</p>
   </div>
 </section>
 
-<section class="edge">
-  <div class="wrap grid">
+<section id="approach">
+  <div class="wrap approach">
     <div>
-      <p class="eyebrow">The DNG edge</p>
-      <h2>Most Remodelers Sub Out the Wiring. We Built Our Name on It.</h2>
-      <p style="margin-top:16px">DNexus Group has spent 33+ years on electrical and low-voltage construction. That experience comes with every remodel, so the parts you can't see are done as carefully as the parts you can.</p>
+      <p class="label">Our approach</p>
+      <h2 style="margin-top:14px">No Surprises. No Loose Ends.</h2>
+      <p>Every project runs the same way, whether it's one bathroom or a full tenant build-out.</p>
     </div>
-    <ul>
-      <li>Panel and circuit upgrades</li>
-      <li>Recessed and under-cabinet lighting</li>
-      <li>EV charger installation</li>
-      <li>Smart home, network and security wiring</li>
-    </ul>
+    <div class="rows">
+      <div class="row"><i>01</i><div><h3>Walkthrough and estimate</h3><p>We visit the space, listen to what you want and measure everything. The estimate is free.</p></div></div>
+      <div class="row"><i>02</i><div><h3>Scope, schedule and price</h3><p>You get it in writing and approve it before any work starts.</p></div></div>
+      <div class="row"><i>03</i><div><h3>Build</h3><p>Our crew does the work, keeps the site clean and keeps you updated along the way.</p></div></div>
+      <div class="row"><i>04</i><div><h3>Electrical and low-voltage</h3><p>Panels, lighting, EV chargers, network and security wiring, handled by people who do it for a living.</p></div></div>
+      <div class="row"><i>05</i><div><h3>Final walkthrough</h3><p>We go through the finished job together and fix anything you flag.</p></div></div>
+    </div>
   </div>
 </section>
 
-<section id="estimate">
+<div class="band">
+  <img class="bg" src="img/crew.jpg" width="2000" height="1125" loading="lazy" alt="Construction crew walking through a building under renovation">
+  <div class="wrap">
+    <p class="label">The DNG difference</p>
+    <h2>Most Remodelers Sub Out the Wiring. We Built Our Name on It.</h2>
+    <p>The parts of a remodel you can't see are done as carefully as the parts you can.</p>
+    <a class="btn" href="#estimate">Talk to Our Team <svg class="arrow" aria-hidden="true" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M0 5h16M12 1l4 4-4 4"/></svg></a>
+  </div>
+</div>
+
+<section class="paper" id="estimate">
   <div class="wrap quote">
     <div>
-      <p class="eyebrow">Free estimate</p>
+      <p class="label">Free estimate</p>
       <h2>Tell Us About Your Project</h2>
-      <p style="margin-top:14px">Share a few details and we'll get back to you to schedule a visit. Estimates are free and there's no obligation.</p>
-      <div class="contact-lines">
-        <span>Phone: (786) 358-7238</span>
-        <span>Email: info@dngllcconstruction.com</span>
+      <p>Share a few details and we'll get back to you to schedule a visit. There's no cost and no obligation.</p>
+      <div class="lines">
+        <div><span>Phone</span>(786) 358-7238</div>
+        <div><span>Email</span>info@dngllcconstruction.com</div>
       </div>
     </div>
     <form id="estimate-form" novalidate>
@@ -307,55 +324,57 @@ header a:has(.wm){text-decoration:none}
       <div class="field"><label for="f-service">Project</label>
         <select id="f-service" name="service"><option>Kitchen</option><option>Bathroom</option><option>Basement</option><option>Addition or whole-home</option><option>Tenant build-out</option><option>Office or retail renovation</option><option>Electrical or low-voltage</option><option>Something else</option></select></div>
       <div class="field full"><label for="f-msg">What do you have in mind?</label><textarea id="f-msg" name="message"></textarea></div>
-      <button class="btn" type="submit">Request My Free Estimate</button>
-      <p id="sent" role="status" hidden>This is a preview, so the form isn't connected yet. On the live site this sends your request straight to the DNG team.</p>
+      <button class="btn" type="submit">Request My Estimate</button>
+      <p id="sent" role="status" hidden>This is a preview, so the form isn't connected yet. On the finished site this sends your request straight to the DNG team.</p>
     </form>
   </div>
 </section>
-
-<div class="cta">
-  <div class="wrap">
-    <h2>Start Your Next Project</h2>
-    <p>Partner with DNG for a remodel that's planned properly, built well and finished on time.</p>
-    <a class="btn white" href="#estimate">Schedule a Free Estimate</a>
-  </div>
-</div>
 
 </main>
 
 <footer>
   <div class="wrap">
     <div class="foot">
-      <span class="wm">DNG<small>Construction</small></span>
-      <nav aria-label="Footer">
-        <a href="#services">Services</a>
-        <a href="#why">Why DNG</a>
-        <a href="#process">Our Process</a>
-        <a href="#projects">Projects</a>
-        <a href="#estimate">Contact</a>
-      </nav>
+      <div>
+        <a class="wm" href="#top">DNG<small>Construction</small></a>
+        <p>Home and commercial remodeling, built by one accountable crew.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#markets">Markets</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>(786) 358-7238</li>
+          <li>info@dngllcconstruction.com</li>
+          <li><a href="#estimate">Request a free estimate</a></li>
+        </ul>
+      </div>
     </div>
     <div class="legal">
-      <span>© 2026 DNG Construction. All rights reserved.</span>
-      <span>A DNexus Group company · Website by Studio 7</span>
+      <span>© 2026 DNG Construction LLC. All rights reserved.</span>
+      <span>Website by Studio 7</span>
     </div>
   </div>
 </footer>
 
 <script>
-document.getElementById('estimate-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  document.getElementById('sent').hidden = false;
-});
-document.querySelectorAll('main img').forEach(function (img) {
-  function swap() {
-    var d = document.createElement('div');
-    d.className = 'ph';
-    d.textContent = 'Photo: ' + img.alt;
-    img.replaceWith(d);
-  }
-  if (img.complete && img.naturalWidth === 0) swap(); else img.addEventListener('error', swap);
-});
+(function () {
+  var hdr = document.getElementById('hdr');
+  function onScroll() { hdr.classList.toggle('solid', window.scrollY > 40); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  document.getElementById('estimate-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('sent').hidden = false;
+  });
+})();
 </script>
 </body>
 </html>

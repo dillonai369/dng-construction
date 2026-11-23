@@ -4,12 +4,14 @@ import { mkdir } from 'node:fs/promises';
 
 const base = 'https://d8j0ntlcm91z4.cloudfront.net/user_3DbBqBJSTphBlonPIPBadV3Q1Q8/';
 const photos = [
-  ['hero', 'hf_20261121_213219_cc362369-d2b8-4d7b-8607-e44d556474bc.png', 1600, 900],
+  ['hero', 'hf_20261123_182514_9ac9eb6b-26f8-430f-9861-bbd8792372f3.png', 2000, 1125],
+  ['home', 'hf_20261123_182514_4257b75d-c740-4906-9049-a3dd5b58c0a4.png', 1400, 1050],
+  ['commercial', 'hf_20261123_182513_50f9933f-3e30-4657-ba52-ded2c2c2b1fa.png', 1400, 1050],
+  ['crew', 'hf_20261123_182512_5374a486-d1a6-48f7-9ff3-9fad0848ed82.png', 2000, 1125],
   ['kitchen', 'hf_20261121_213218_270ca85c-c754-4e96-a02c-f6289c12ab90.png', 1000, 750],
   ['bath', 'hf_20261121_213218_592c7d68-ba36-4038-92de-ca2ecb3de5d5.png', 1000, 750],
   ['office', 'hf_20261121_213218_de0c031b-b811-4b30-bd92-60e32eefa974.png', 1000, 750],
   ['basement', 'hf_20261121_213219_62f2c6f5-465e-44f8-bbb8-2ac93fa6ef0a.png', 1000, 750],
-  ['crew', 'hf_20261121_213217_6dc1e823-0533-4e13-b8a5-4bd0b0f6d462.png', 1000, 750],
 ];
 
 await mkdir('public/img', { recursive: true });
