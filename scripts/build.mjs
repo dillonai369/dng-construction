@@ -118,7 +118,6 @@ ${body}
   </div>
 </footer>
 
-<button class="top" id="top-btn" type="button" aria-label="Back to top"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 14V2M3 7l5-5 5 5"/></svg></button>
 <script src="/site.js" defer></script>
 </body>
 </html>

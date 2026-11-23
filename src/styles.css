@@ -235,9 +235,6 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--blue);backg
 .lines div:hover{padding-left:8px}
 .foot li a{transition:color .2s ease,padding-left .2s ease}
 .foot li a:hover{padding-left:6px;text-decoration:none}
-.top{position:fixed;right:22px;bottom:22px;z-index:9;width:48px;height:48px;border-radius:50%;border:1px solid var(--rule);background:rgba(10,20,54,.9);color:var(--white);display:grid;place-items:center;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s ease,background .2s ease}
-.top.show{opacity:1;transform:none;pointer-events:auto}
-.top:hover{background:var(--blue)}
 @media (prefers-reduced-motion:reduce){
   .hero img.bg,.hero .label,.hero h1,.hero .lead,.hero .actions,.hero-foot,.track{animation:none}
   html.js .rv{opacity:1;transform:none}
@@ -350,3 +347,14 @@ nav a[aria-current="page"]::after{transform:scaleX(1)}
 .article-cta h3{font-size:1.4rem;text-transform:uppercase}
 .notfound{min-height:70vh;display:grid;place-items:center;text-align:center;padding:160px 28px 100px}
 .notfound p{color:var(--mute);margin:18px 0 30px}
+
+/* ---------- Phone layout ---------- */
+.hf-marquee{display:none}
+@media (max-width:860px){
+  .hero-foot{display:block;overflow:hidden;white-space:nowrap;margin-left:-28px;margin-right:-28px;padding-top:18px}
+  .hf-static{display:none}
+  .hf-marquee{display:inline-flex;animation:slide 26s linear infinite}
+  .hf-marquee span{display:inline-flex;align-items:center;gap:18px;padding-right:18px}
+  .hf-marquee span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}
+}
+@media (prefers-reduced-motion:reduce){.hf-marquee{animation:none}}

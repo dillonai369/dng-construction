@@ -6,15 +6,13 @@
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var bar = document.getElementById('progress');
-  var topBtn = document.getElementById('top-btn');
   var bandImg = document.querySelector('.band img.bg');
-  if (!bar || !topBtn) return;
+  if (!bar) return;
   var ticking = false;
   function frame() {
     ticking = false;
     var max = document.documentElement.scrollHeight - window.innerHeight;
     bar.style.transform = 'scaleX(' + (max > 0 ? window.scrollY / max : 0) + ')';
-    topBtn.classList.toggle('show', window.scrollY > 900);
     if (bandImg && !reduce) {
       var r = bandImg.parentElement.getBoundingClientRect();
       if (r.bottom > 0 && r.top < window.innerHeight) {
@@ -25,7 +23,6 @@
   }
   window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
   frame();
-  topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
 
   function countUp(el) {
     var to = +el.getAttribute('data-to'), suffix = el.getAttribute('data-suffix') || '', start = null;
