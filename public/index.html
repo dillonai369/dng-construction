@@ -80,6 +80,7 @@ nav a:hover{border-bottom-color:var(--white)}
 /* Intro */
 .paper{background:var(--paper);color:var(--ink)}
 section{padding:104px 0}
+section[id],div[id]{scroll-margin-top:78px}
 @media (max-width:860px){section{padding:68px 0}}
 .intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:72px;align-items:end}
 @media (max-width:860px){.intro{grid-template-columns:minmax(0,1fr);gap:28px}}
@@ -89,10 +90,10 @@ section{padding:104px 0}
 /* Markets */
 .markets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:860px){.markets{grid-template-columns:minmax(0,1fr)}}
-.panel{position:relative;min-height:640px;display:flex;align-items:flex-end;overflow:hidden;background:var(--navy)}
+.panel{position:relative;min-height:720px;display:flex;align-items:flex-end;overflow:hidden;background:var(--navy)}
 .panel img{transition:transform .8s ease}
 .panel:hover img{transform:scale(1.04)}
-.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,30,.3) 0%,rgba(5,10,30,.92) 78%)}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,30,.05) 0%,rgba(5,10,30,.45) 38%,rgba(5,10,30,.9) 72%)}
 .panel-in{position:relative;z-index:1;padding:48px;width:100%}
 @media (max-width:520px){.panel{min-height:560px}.panel-in{padding:32px 28px}}
 .panel h2{font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:.06em;margin:12px 0 14px}
