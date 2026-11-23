@@ -189,9 +189,82 @@ footer{background:var(--ink);padding:62px 0 30px}
 .foot li a{text-decoration:none;color:#DDE3F1}
 .foot li a:hover{color:var(--white);text-decoration:underline}
 .legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:56px;padding-top:22px;border-top:1px solid var(--rule);font-size:.8rem;color:var(--mute)}
+
+/* ---------- Motion and interaction ---------- */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:20;background:linear-gradient(90deg,var(--blue),var(--green));transform:scaleX(0);transform-origin:0 50%}
+.bar,.logo img{transition:height .3s ease}
+header.solid .bar{height:74px}
+header.solid .logo img{height:52px}
+nav a{position:relative;border-bottom:0 !important}
+nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--green);transform:scaleX(0);transform-origin:0 50%;transition:transform .3s ease}
+nav a:hover::after{transform:scaleX(1)}
+.arrow{transition:transform .25s ease}
+.btn:hover .arrow{transform:translateX(6px)}
+.btn:active{transform:translateY(0) scale(.98)}
+
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes settle{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero img.bg{animation:settle 2.6s cubic-bezier(.2,.7,.2,1) both}
+.hero .label,.hero h1,.hero .lead,.hero .actions,.hero-foot{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{animation-delay:.12s}.hero .lead{animation-delay:.26s}.hero .actions{animation-delay:.38s}.hero-foot{animation-delay:.52s}
+
+html.js .rv{opacity:0;transform:translateY(30px);transition:opacity .75s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .75s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+html.js .rv.in{opacity:1;transform:none}
+
+.ticker{overflow:hidden;padding:26px 0;white-space:nowrap}
+.track{display:inline-flex;animation:slide 46s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+.track span{display:inline-flex;align-items:center;gap:34px;padding-right:34px;font-size:clamp(1.1rem,2.2vw,1.7rem);font-weight:600;font-stretch:118%;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.track span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--green)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+.panel-in{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.panel:hover .panel-in{transform:translateY(-8px)}
+.panel::after{transition:opacity .5s ease}
+.panel:hover::after{opacity:.86}
+.panel li{transition:padding-left .25s ease,color .25s ease}
+.panel li:hover{padding-left:10px;color:var(--sky)}
+
+.stat{transition:background .3s ease}
+.stat b{text-transform:uppercase;transition:color .3s ease,transform .3s ease;transform-origin:0 100%}
+.stat:hover b{color:var(--sky);transform:translateY(-4px)}
+.stat b::after{transition:width .35s ease}
+.stat:hover b::after{width:72px}
+
+.card .shot{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s ease}
+.card:hover .shot{transform:translateY(-8px);box-shadow:0 30px 60px rgba(5,10,30,.24)}
+.card strong{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card strong::after{content:"";width:18px;height:10px;flex:none;background:currentColor;clip-path:polygon(0 42%,72% 42%,56% 10%,66% 0,100% 50%,66% 100%,56% 90%,72% 58%,0 58%);opacity:0;transform:translateX(-8px);transition:opacity .3s ease,transform .3s ease}
+.card:hover strong::after{opacity:1;transform:none}
+
+.row{border-radius:var(--r-md);transition:background .3s ease,padding .3s ease}
+.row:hover{background:rgba(255,255,255,.05);padding-left:18px;padding-right:18px}
+.row i{transition:background .3s ease,color .3s ease,border-color .3s ease}
+.row:hover i{background:var(--green);border-color:var(--green);color:var(--ink)}
+
+.band img.bg{will-change:transform;transform:scale(1.16)}
+form{transition:box-shadow .3s ease,transform .3s ease}
+form:focus-within{box-shadow:0 30px 70px rgba(5,10,30,.2)}
+input,select,textarea{transition:border-color .2s ease,box-shadow .2s ease,background .2s ease}
+input:hover,select:hover,textarea:hover{border-color:#8E97AD}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--blue);background:var(--white);box-shadow:0 0 0 4px rgba(47,107,255,.18)}
+.lines div{transition:padding-left .25s ease}
+.lines div:hover{padding-left:8px}
+.foot li a{transition:color .2s ease,padding-left .2s ease}
+.foot li a:hover{padding-left:6px;text-decoration:none}
+.top{position:fixed;right:22px;bottom:22px;z-index:9;width:48px;height:48px;border-radius:50%;border:1px solid var(--rule);background:rgba(10,20,54,.9);color:var(--white);display:grid;place-items:center;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s ease,background .2s ease}
+.top.show{opacity:1;transform:none;pointer-events:auto}
+.top:hover{background:var(--blue)}
+@media (prefers-reduced-motion:reduce){
+  .hero img.bg,.hero .label,.hero h1,.hero .lead,.hero .actions,.hero-foot,.track{animation:none}
+  html.js .rv{opacity:1;transform:none}
+  .band img.bg{transform:none}
+}
 </style>
 </head>
 <body>
+<script>document.documentElement.classList.add("js")</script>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <header id="hdr">
   <div class="wrap bar">
@@ -239,6 +312,8 @@ footer{background:var(--ink);padding:62px 0 30px}
   </div>
 </section>
 
+<div class="ticker" aria-hidden="true"><div class="track"><span>Kitchens</span><span>Bathrooms</span><span>Basements</span><span>Additions</span><span>Whole-Home Renovations</span><span>Tenant Build-Outs</span><span>Office Renovations</span><span>Retail Spaces</span><span>Restaurants</span><span>Electrical &amp; Lighting</span><span>Kitchens</span><span>Bathrooms</span><span>Basements</span><span>Additions</span><span>Whole-Home Renovations</span><span>Tenant Build-Outs</span><span>Office Renovations</span><span>Retail Spaces</span><span>Restaurants</span><span>Electrical &amp; Lighting</span></div></div>
+
 <div class="markets" id="markets">
   <div class="panel">
     <img src="img/home.jpg" width="1400" height="1050" loading="lazy" alt="Remodeled kitchen with dark cabinetry and a marble island">
@@ -268,10 +343,10 @@ footer{background:var(--ink);padding:62px 0 30px}
 
 <div class="stats">
   <div class="wrap">
-    <div class="stat"><b>33+</b><span>Years of DNexus Group experience behind us</span></div>
-    <div class="stat"><b>2</b><span>Markets: home and commercial</span></div>
-    <div class="stat"><b>1</b><span>Crew from start to finish</span></div>
-    <div class="stat"><b>$0</b><span>Cost for your estimate</span></div>
+    <div class="stat"><b data-to="33" data-suffix="+">33+</b><span>Years of experience behind our team</span></div>
+    <div class="stat"><b data-to="100" data-suffix="%">100%</b><span>Of projects scoped and priced in writing</span></div>
+    <div class="stat"><b data-to="5">5</b><span>Clear steps from walkthrough to final finish</span></div>
+    <div class="stat"><b>Free</b><span>Estimates, with no obligation</span></div>
   </div>
 </div>
 
@@ -381,12 +456,70 @@ footer{background:var(--ink);padding:62px 0 30px}
   </div>
 </footer>
 
+<button class="top" id="top-btn" type="button" aria-label="Back to top"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 14V2M3 7l5-5 5 5"/></svg></button>
+
 <script>
 (function () {
   var hdr = document.getElementById('hdr');
   function onScroll() { hdr.classList.toggle('solid', window.scrollY > 40); }
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar = document.getElementById('progress');
+  var topBtn = document.getElementById('top-btn');
+  var bandImg = document.querySelector('.band img.bg');
+  var ticking = false;
+  function frame() {
+    ticking = false;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? window.scrollY / max : 0) + ')';
+    topBtn.classList.toggle('show', window.scrollY > 900);
+    if (bandImg && !reduce) {
+      var r = bandImg.parentElement.getBoundingClientRect();
+      if (r.bottom > 0 && r.top < window.innerHeight) {
+        var t = (r.top + r.height / 2 - window.innerHeight / 2) * -0.08;
+        bandImg.style.transform = 'scale(1.16) translateY(' + t.toFixed(1) + 'px)';
+      }
+    }
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
+  frame();
+  topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+
+  function countUp(el) {
+    var to = +el.getAttribute('data-to'), suffix = el.getAttribute('data-suffix') || '', start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var p = Math.min((ts - start) / 1400, 1);
+      el.firstChild.nodeValue = Math.round(to * (1 - Math.pow(1 - p, 3))) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window && !reduce) {
+    var sel = '.intro > div, .ticker, .panel, .stat, .head > *, .card, .fine, .approach > div:first-child, .row, .band .wrap > *, .quote > div, form, .foot > div, .legal';
+    var els = [].slice.call(document.querySelectorAll(sel));
+    els.forEach(function (el) {
+      var sibs = [].slice.call(el.parentElement.children);
+      el.style.setProperty('--d', Math.min(sibs.indexOf(el), 5) * 0.09 + 's');
+      el.classList.add('rv');
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        io.unobserve(el);
+        el.classList.add('in');
+        var b = el.querySelector && el.matches('.stat') ? el.querySelector('b[data-to]') : null;
+        if (b) countUp(b);
+        setTimeout(function () { el.classList.remove('rv', 'in'); el.style.removeProperty('--d'); }, 1400);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  }
+
   document.getElementById('estimate-form').addEventListener('submit', function (e) {
     e.preventDefault();
     document.getElementById('sent').hidden = false;
