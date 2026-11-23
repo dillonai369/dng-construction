@@ -20,6 +20,13 @@ for (const [name, file, w, h] of photos) {
   const res = await fetch(base + file);
   if (!res.ok) throw new Error(`Could not download ${name}: HTTP ${res.status}`);
   const buf = Buffer.from(await res.arrayBuffer());
+  if (name === 'hero') {
+    // Link-preview image: the hero photo with the logo and headline overlay.
+    await sharp(buf).resize(1200, 630, { fit: 'cover', position: 'right' })
+      .composite([{ input: 'scripts/og-overlay.png' }])
+      .jpeg({ quality: 86, mozjpeg: true }).toFile('public/img/og.jpg');
+    console.log('wrote public/img/og.jpg');
+  }
   await sharp(buf).resize(w, h, { fit: 'cover' }).jpeg({ quality: 78, mozjpeg: true }).toFile(`public/img/${name}.jpg`);
   console.log(`wrote public/img/${name}.jpg`);
 }
