@@ -21,7 +21,3 @@ for (const [name, file, w, h] of photos) {
   await sharp(buf).resize(w, h, { fit: 'cover' }).jpeg({ quality: 78, mozjpeg: true }).toFile(`public/img/${name}.jpg`);
   console.log(`wrote public/img/${name}.jpg`);
 }
-
-await sharp('scripts/logo-source.png').resize({ width: 640 }).png().toFile('public/img/logo.png');
-await sharp('scripts/logo-source.png').extract({ left: 0, top: 60, width: 440, height: 440 }).resize(96, 96, { fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 0 } }).png().toFile('public/img/favicon.png');
-console.log('wrote logo and favicon');
