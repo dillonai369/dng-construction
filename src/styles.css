@@ -256,7 +256,7 @@ nav a[aria-current="page"]::after{transform:scaleX(1)}
 .menu-open .menu-btn span::after{transform:translateY(-6px) rotate(-45deg)}
 @media (max-width:1020px){.menu-btn{display:grid}}
 @media (max-width:560px){.bar .btn{display:none}}
-.mnav{position:fixed;inset:0;z-index:9;background:rgba(5,10,30,.98);padding:120px 28px 40px;overflow:auto}
+.mnav{position:fixed;inset:0;z-index:9;background:var(--ink);padding:120px 28px 40px;overflow:auto}
 .mnav[hidden]{display:none}
 .mnav a{display:block;padding:18px 0;border-bottom:1px solid var(--rule);font-size:1.5rem;font-weight:600;font-stretch:116%;text-transform:uppercase;text-decoration:none}
 .mnav a.btn{margin-top:28px;border:1px solid var(--blue);font-size:.9rem;display:inline-flex;padding:16px 26px}
