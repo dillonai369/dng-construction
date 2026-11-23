@@ -358,3 +358,69 @@ nav a[aria-current="page"]::after{transform:scaleX(1)}
   .hf-marquee span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}
 }
 @media (prefers-reduced-motion:reduce){.hf-marquee{animation:none}}
+@media (max-width:560px){
+  .wrap{padding:0 20px}
+  section{padding:56px 0}
+  .bar{height:76px}
+  header.solid .bar{height:64px}
+  header.solid .logo img{height:44px}
+  .mnav{padding:104px 20px 32px}
+  .mnav a{font-size:1.25rem;padding:16px 0}
+
+  h1{font-size:clamp(1.85rem,8vw,2.4rem);font-stretch:106%;letter-spacing:-.01em}
+  h2{font-size:clamp(1.55rem,6.6vw,1.9rem);font-stretch:108%}
+  .page-hero h1{font-size:clamp(1.7rem,7.2vw,2.2rem)}
+  .label{font-size:.68rem;letter-spacing:.16em}
+  .btn{padding:15px 20px;font-size:.74rem;letter-spacing:.1em;white-space:nowrap;justify-content:center}
+  .hero .actions .btn,.page-hero .actions .btn,.panel .btn,.band .btn,form .btn,.article-cta .btn,.intro .btn,.head .btn{width:100%}
+  .actions{gap:10px}
+
+  .hero{min-height:0}
+  .hero .wrap{padding-top:132px;padding-bottom:28px}
+  .hero p.lead{font-size:1.02rem;margin:16px 0 24px}
+  .hero-foot{margin:36px -20px 0}
+  .page-hero{min-height:0}
+  .page-hero.plain{min-height:0}
+  .page-hero .wrap{padding-top:118px;padding-bottom:40px}
+  .page-hero .lead{font-size:1.02rem;margin-top:14px}
+  .page-hero::after{background:linear-gradient(180deg,rgba(5,10,30,.9) 0%,rgba(5,10,30,.62) 45%,rgba(5,10,30,.94) 100%)}
+  .crumbs{margin-bottom:18px;font-size:.68rem}
+  .crumbs li:nth-child(n+3){display:none}
+  .meta{font-size:.68rem;letter-spacing:.12em;margin-top:16px}
+
+  .intro,.two{gap:22px}
+  .ticker{padding:18px 0}
+  .panel{min-height:0}
+  .panel-in{padding:150px 22px 26px}
+  .panel ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;margin:18px 0 22px}
+  .panel li{font-size:.86rem;padding:10px 0}
+  .stat{padding:26px 16px 24px}
+  .stat b{font-size:2.3rem}
+  .stat span{font-size:.68rem;letter-spacing:.1em}
+  .head{margin-bottom:28px}
+  .card img,.grid.three .card img{aspect-ratio:4/3}
+  .card figcaption{padding-top:12px}
+  .grid,.grid.three,.posts,.svc-grid{gap:18px}
+  .svc{padding:24px 22px}
+  .value{padding:24px 22px}
+  .values{margin-top:28px;gap:14px}
+  .approach{gap:24px}
+  .row{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:20px 0}
+  .row:hover{padding-left:0;padding-right:0;background:transparent}
+  .band{padding:72px 0}
+  .quote{gap:24px}
+  form{padding:22px 18px;gap:14px}
+  .lines div{font-size:.95rem}
+  .faq summary{font-size:1rem;padding:18px 2px}
+  .filters{gap:8px;margin-bottom:24px}
+  .filters button{padding:9px 16px;font-size:.7rem}
+  .prose{font-size:1.02rem}
+  .prose h2{font-size:1.3rem;margin-top:34px}
+  .article figure{margin-bottom:28px}
+  .article-cta{padding:26px 22px;margin-top:40px}
+  .article-cta h3{font-size:1.15rem}
+  footer{padding:48px 0 24px}
+  .foot{gap:28px}
+  footer .logo img{height:64px}
+  .legal{margin-top:36px}
+}
